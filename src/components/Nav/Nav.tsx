@@ -27,7 +27,7 @@ const navbarLeftItems: NavItem[] = [
 
 function Nav() {
   return (
-    <div className='bg-[#F7F7F7]'>
+    <div className='bg-[#F7F7F7] hidden lg:block'>
       <nav className='flex justify-between text-base px-24 py-3'>
         <p>Welcome to JAT MALL. | 26°C  Open 9:00am - 11:00pm</p>
         <div className='flex justify-between gap-5'>

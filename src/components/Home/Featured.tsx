@@ -46,7 +46,7 @@ function Featured() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const handleResize = useCallback(() => {
-    setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
+    setIsMobile(window.innerWidth < 768); 
   }, []);
 
   useEffect(() => {
@@ -69,12 +69,12 @@ function Featured() {
             <section className="flex justify-center mt-10">
       <div className="flex flex-wrap md:flex-nowrap justify-between gap-3">
         {featuredItems.map((feat, index) => {
-          const shouldAnimate = !isMobile; // Disable animation on mobile
+          const shouldAnimate = !isMobile; 
           
           return (
             <motion.div
               key={index}
-              className={`relative overflow-hidden ${isMobile ? 'w-full' : 'w-full md:w-1/3 lg:w-1/4'}`}
+              className={`relative overflow-hidden ${isMobile ? 'w-[100%]' : 'w-full md:w-1/3 lg:w-1/4'}`}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
               animate={shouldAnimate ? {
@@ -186,21 +186,21 @@ function Featured() {
 
         <section className='py-10 text-[#FFFFFF]'>
           <section className='relative'>
-          <div>
-            <img src={shop} alt='shop' />
+          <div >
+            <img src={shop} alt='shop' className='w-full h-[80vh] lg:h-full object-cover'/>
           </div>
 
 
-          <section className='px-24 absolute top-1/3'>
-            <section className='flex justify-center'>
+          <section className='px-5 lg:px-24 absolute top-1/3'>
+            <section className='flex text-center lg:text-start justify-center items-center lg:justify-center flex-wrap lg:flex-nowrap '>
 
           <div>
             <p className='font-montage text-4xl'>You Shop, We Deliver</p>
-            <p className='text-sm w-3/4 mt-3 leading-6'>Whether you’re looking for the latest in fashion, top-notch interior designs, daily groceries, or a relaxing spa day, JAT Mall has it all under one roof. Explore, shop, and indulge in the variety we offer.</p>
+            <p className='text-sm lg:w-3/4 mt-3 leading-6'>Whether you’re looking for the latest in fashion, top-notch interior designs, daily groceries, or a relaxing spa day, JAT Mall has it all under one roof. Explore, shop, and indulge in the variety we offer.</p>
           </div>
 
 
-          <div className='w-[20%]'>
+          <div className='lg:w-[20%] mt-5'>
             <button className='border w-full py-3 px-5'>Discover me</button>
           </div>
             </section>

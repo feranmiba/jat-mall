@@ -2,8 +2,8 @@ import React from 'react'
 import Gift from '../utils/images/gift.png'
 import Pharmacy from '../utils/images/pharmacy.png'
 import Furniture from '../utils/images/furniture.png'
-import Airpod from '../utils/images/pod.png'
-import Phone from '../utils/images/xiamo.png'
+import Airpod from '../utils/images/furni.png'
+import Phone from '../utils/images/present.png'
 import Last from '../utils/images/last.png'
 import { FaArrowRight } from 'react-icons/fa'
 
@@ -82,19 +82,19 @@ function More() {
     <div>
 
         <section className='px-5 lg:px-24 py-10'>
-        <div>
+        <div className='text-center lg:text-start '>
                 <p className='font-montage'>Premium Deals</p>                 
             </div>
 
             <section className='flex flex-wrap lg:flex-nowrap justify-between gap-5 mt-10'>
 
-                <div className='bg-[#F2F4F5] py-5 px-10 flex justify-between items-center rounded-md' >
+                <div className='bg-[#F2F4F5] py-5 px-3 lg:px-10 flex justify-between items-center rounded-md' >
 
                     <div className='w-[100%]'>
                         <p className='px-3 py-2 bg-[#2DA5F3] text-white w-[50%] text-sm'>INTRODUCING</p>
-                        <p className='text-3xl font-semibold mt-2'>New Apple
-                        Homepod Mini</p>
-                        <p className='text-sm mt-2'>Jam-packed with innovation, HomePod mini delivers unexpectedly.</p>
+                        <p className='text-3xl font-semibold mt-2'>Transform 
+                        Your Space!</p>
+                        <p className='text-sm mt-2 text-[#475156]'>Discover Stylish Interiors and Unbeatable Designs at JAT Mall!</p>
                         <button className='uppercase bg-[#F15A25] border py-2 px-5 text-white mt-5 flex gap-2 text-sm'>Shop Now <FaArrowRight  className='text-lg mt-[1px]' /> </button>
                     </div>
 
@@ -105,20 +105,16 @@ function More() {
 
 
                 
-                <div className='bg-[#191C1F] text-white pt-5 px-10 flex justify-between items-center rounded-md' >
+                <div className='bg-[#191C1F] text-white py-5 lg:py-0 pt-5 px-3 lg:px-10 flex justify-between items-center rounded-md' >
 
                     <div className='w-[100%]'>
-                        <p className='px-3 py-2 bg-[#EFD33D] text-[#191C1F] w-[60%] text-sm'>INTRODUCING NEW</p>
-                        <p className='text-3xl font-semibold mt-2'>Xiaomi Mi 11 Ultra
-                        12GB+256GB</p>
-                        <p className='text-sm mt-2 text-[#ADB7BC]'>*Data provided by internal laboratories. Industry measurment.</p>
+                        <p className='px-3 py-2 bg-[#EFD33D] text-[#191C1F] w-[85%] lg:w-[60%] text-sm'>INTRODUCING NEW</p>
+                        <p className='text-3xl font-semibold mt-2'>Find the Perfect Gifts, Spread the Joy!</p>
+                        <p className='text-sm mt-2 text-[#ADB7BC]'>Discover Unique Treasures at JAT Mall Gift Shop!</p>
                         <button className='uppercase bg-[#F15A25] py-2 px-5 text-white mt-5 flex gap-2 text-sm'>Shop Now <FaArrowRight  className='text-lg mt-[1px]' /> </button>
                     </div>
 
                     <div className='flex flex-col items-end justify-end'>
-                        <div className='relative text-center flex justify-center items-center'>
-                            <p className='absolute w-[60px] rounded-full h-[60px] bg-[#2DA5F3] items-center justify-center flex'>$590</p>
-                        </div>
                         <img src={Phone} alt="" />
                     </div>
                 </div>
@@ -136,10 +132,24 @@ function More() {
 
     </div>
 
+    <section className='relative'>
+        <div className='py-10'>
+            <img src={Last} alt="" className='w-full h-[60vh] lg:h-full object-cover'/>
+        </div>
 
-    <div className='py-10'>
-        <img src={Last} alt="" />
-    </div>
+        <div className='px-5 lg:px-24 absolute lg:left-[15%] lg:right-[15%] top-1/4 lg:top-[20%] text-white flex justify-center text-center'>
+
+            <div>
+                <p className='text-5xl font-montage pb-2'>Shop, Dine, Relax!</p>
+                <p>**Your Ultimate Shopping Experience Awaits—Discover Endless Possibilities and Unmatched Variety at JAT Mall!**</p>
+                <button className='px-5 py-3 mt-2 border'>GET STARTED</button>
+            </div>
+
+        </div>
+    </section>
+
+
+   
     </section>
   )
 }
